@@ -90,13 +90,13 @@ class Goose(Pets):
         self.name = pets_name
         self.color = pets_color
         self.weight = pets_weight
-        self.state == 'FEEDING'
+        self.state = 'FEEDING'
 
     # переопределяем взаимодействие
     def utilization(self):
         print(f'Гусь {self.name} снес 2 яйца!')
 
-class Сhicken(Pets):
+class Chicken(Pets):
     """
     Класс Курица
     """
@@ -109,7 +109,7 @@ class Сhicken(Pets):
         self.name = pets_name
         self.color = pets_color
         self.weight = pets_weight
-        self.state == 'FEEDING'
+        self.state = 'FEEDING'
     # переопределяем взаимодействие
     def utilization(self):
         print(f'Курица {self.name} снесла 1 яйцо!')
@@ -127,7 +127,7 @@ class Duck(Pets):
         self.name = pets_name
         self.color = pets_color
         self.weight = pets_weight
-        self.state == 'FEEDING'
+        self.state = 'FEEDING'
     # переопределяем взаимодействие
     def utilization(self):
         print(f'Утка {self.name} снесла 1 яйцо!')
@@ -145,7 +145,7 @@ class Cow(Pets):
         self.name = pets_name
         self.color = pets_color
         self.weight = pets_weight
-        self.state == 'FEEDING'
+        self.state = 'FEEDING'
     # переопределяем взаимодействие
     def utilization(self):
         print(f'Корова {self.name} надоила 10 литров молока!')
@@ -163,7 +163,7 @@ class Goat(Pets):
         self.name = pets_name
         self.color = pets_color
         self.weight = pets_weight
-        self.state == 'FEEDING'
+        self.state = 'FEEDING'
     # переопределяем взаимодействие
     def utilization(self):
         print(f'Коза {self.name} надоила 1 литр молока!')
@@ -182,7 +182,7 @@ class Sheep(Pets):
         self.name = pets_name
         self.color = pets_color
         self.weight = pets_weight
-        self.state == 'FEEDING'
+        self.state = 'FEEDING'
     # переопределяем взаимодействие
     def utilization(self):
         print(f'Овца {self.name} принесла 1 кг шерсти!')
@@ -202,8 +202,8 @@ goose_troop[0].set_name('Серый')
 goose_troop[1].set_name('Белый')
 
 # создаю поголовье кур
-chicken_troop = [Сhicken('Ко-Ко' + str(x + 1), 'белый', random.randint(3, 5)) for x in range(2)]
-farm.setdefault(Сhicken.sort,chicken_troop)
+chicken_troop = [Chicken('Ко-Ко' + str(x + 1), 'белый', random.randint(3, 5)) for x in range(2)]
+farm.setdefault(Chicken.sort,chicken_troop)
 
 chicken_troop[0].set_name('Ко-Ко')
 chicken_troop[1].set_name('Кукареку')
